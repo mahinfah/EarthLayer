@@ -6,16 +6,15 @@ h1{
     font-variant:small-caps;
     font-size: 223px;
 }
-.p1{  
+#p1{  
+    width: 100%; /* Ensure the element has width */
+    height: 100%; /* Ensure the element has height */
 
-
-    background-image: url('../images/new.jpg'); /* Adjust the path if necessary */
+    background-image: url(new.jpg); /* Adjust the path if necessary */
     background-size: cover; /* Adjust the size of the background image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
     background-position: center; /* Center the background image */
-    width: 100%; /* Ensure the element has width */
-    height: 1900px
-}
+  }
  
 .a1{
     display:inline-block;
