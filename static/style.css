@@ -4,25 +4,31 @@
 	padding:0px;
 }
 
-h{
+h1{
     font-kerning:earthquake;
     font-variant:small-caps;
     font-size: 223px;
 }
-p1{
+.p1{  
 
-    color: rgb(140, 223, 223);
+    background-color: rgb(140, 223, 223);
+    width: 100%; /* Set the desired width */
+    height: 900px
 }
 
-p2{
+.p2{
 
-    color: rgb(99, 86, 177);
+    background-color: rgb(99, 86, 177);
+    width: 100%; /* Set the desired width */
+    height: 1400px
 }
-p3{
+.p3{
 
-    color: rgb(14, 88, 88);
+    background-color: rgb(14, 88, 88);    width: 100%; /* Set the desired width */
+    height: 1400px
 }
-p4{
+.p4{
 
-    color: rgb(87, 58, 113);
+    background-color: rgb(87, 58, 113);    width: 100%; /* Set the desired width */
+    height: 1400px
 }
