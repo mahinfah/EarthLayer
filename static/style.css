@@ -1,9 +1,6 @@
-*
-{
-	margin:0px;
-	padding:0px;
+html{
+    scroll-behavior: smooth;
 }
-
 h1{
     font-kerning:earthquake;
     font-variant:small-caps;
@@ -11,11 +8,32 @@ h1{
 }
 .p1{  
 
-    background-color: rgb(140, 223, 223);
-    width: 100%; /* Set the desired width */
-    height: 900px
-}
 
+    background-image: url('../images/new.jpg'); /* Adjust the path if necessary */
+    background-size: cover; /* Adjust the size of the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the background image */
+    width: 100%; /* Ensure the element has width */
+    height: 1900px
+}
+ 
+.a1{
+    display:inline-block;
+	position: center;
+	margin-left:auto;
+	margin-right:auto;
+
+	height:50px;
+	width:85px;	
+	line-height:50px;
+	border-radius:2px;
+    color: rgb(2, 2, 8);
+    background-color:rgb(238, 238, 238);
+    text-decoration: none;
+    
+    border-radius:25px;
+}    
+  
 .p2{
 
     background-color: rgb(99, 86, 177);
@@ -31,4 +49,33 @@ h1{
 
     background-color: rgb(87, 58, 113);    width: 100%; /* Set the desired width */
     height: 1400px
+}
+
+#dive_button
+{
+	display: inline-block;
+	position: relative;
+	margin-left:auto;
+	margin-right:auto;
+	top:20px;
+	height:50px;
+	width:105px;	
+	line-height:50px;
+	border-radius:5px;
+	background-color:#ffffff;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#dive_button:hover
+{
+	cursor:pointer;
+}
+
+#dive_button:active
+{
+	background-color:#d91313;
 }
