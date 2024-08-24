@@ -27,8 +27,8 @@
   }
   
   .card {
-    height: 100%;
-    width: 100%;
+    height: 500px;
+    width: 500px;
     position: relative;
     transition: transform 1500ms;
     transform-style: preserve-3d;
@@ -36,8 +36,8 @@
   
   .front,
   .back {
-    height: 100%;
-    width: 100%;
+    height: 500px;
+    width: 500px;
     border-radius: 2rem;
     box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
     position: absolute;
@@ -54,7 +54,8 @@
   .back {
   
   
-    background-image: url('/images/01-trunk.jpg');
+    background-image: url('/images/02-trunck.png');
+    background-image: -moz-radial-gradient();
     background-size: cover; /* Ensure the image covers the entire element */
     background-position: center; 
     background-color: #3a3a3a;
