@@ -27,7 +27,7 @@
   }
   
   .card {
-    height: 500px;
+    height: 600px;
     width: 500px;
     position: relative;
     transition: transform 1500ms;
@@ -36,7 +36,7 @@
   
   .front,
   .back {
-    height: 500px;
+    height: 600px;
     width: 500px;
     border-radius: 2rem;
     box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
@@ -55,7 +55,7 @@
   
   
     background-image: url('/images/02-trunck.png');
-    background-image: -moz-radial-gradient();
+   
     background-size: cover; /* Ensure the image covers the entire element */
     background-position: center; 
     background-color: #3a3a3a;
