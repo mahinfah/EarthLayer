@@ -5,9 +5,9 @@
   }
   
   body {
-    height: 100vh;
+    height: 100p;
     overflow: hidden;
-    background: linear-gradient(45deg, #061de3, #e306ca);
+    background: linear-gradient(45deg, #501663, #014973);
     font-family: Helvetica, sans-serif;
     color: rgb(211, 211, 211);
     display: flex;
@@ -50,7 +50,13 @@
     background-position: center; 
   }
   
+
   .back {
+  
+  
+    background-image: url('/images/01-trunk.jpg');
+    background-size: cover; /* Ensure the image covers the entire element */
+    background-position: center; 
     background-color: #3a3a3a;
     transform: rotateY(180deg);
     display: flex;
