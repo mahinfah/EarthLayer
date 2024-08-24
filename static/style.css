@@ -45,7 +45,9 @@
   }
   
   .front {
-    background-image: url(https://source.unsplash.com/random/350x500);
+    background-image: url('/images/01-trunk.jpg');
+    background-size: cover; /* Ensure the image covers the entire element */
+    background-position: center; 
   }
   
   .back {
