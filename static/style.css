@@ -1,175 +1,59 @@
-html{
-    scroll-behavior: smooth;
-}
-h1{
-    font-variant:small-caps;
-    font-size: 223px;
-}
-
 * {
-     box-sizing: border-box;
-}
-body{
-
-    width: 100%;
-    height: 100vh;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(45deg, #061de3, #e306ca);
+    font-family: Helvetica, sans-serif;
+    color: rgb(211, 211, 211);
     display: flex;
     justify-content: center;
-   
-}
-.card {
-width: 300px;
-height: 450px;
-position: relative;
-    display: flex;
-    justify-self: center;
     align-items: center;
-    padding: 0  36px;
-    perspective: 2500px;
-    cursor: pointer;
-    border-radius: 30px;
-
-}
-
-.cover-image{
-
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-}
-
-.wrapper
-{
-    transition: all 0.5s ;
-    position: absolute;
-    width: 100%;
-    z-index: -1;
-    background-color: #000;
-    border-radius: 30px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.22) 0px 10px 10px; 
-}
-.wrapper img{
-border-radius: 30px ;
-box-shadow:rgba(0, 0, 0, 0.25) 0px 14px 28px rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-
-.card:hover .wrapper{
-    transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
-
-}
-.wrapper::before,
-.wrapper::after{
-    content: '';
-    opacity: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-border-radius: 130px;
-    border-radius: 130px;
-    transition: all 0.5s;
-    opacity: 0;
-    left:0 ;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-    .wrapper::before{
-      
-        top: 0;
-     height: 100%;
-     background-image: linear-gradient(to top, transparent 46%, rgba(126, 126, 128, 0.5) 68%, rgba(12, 13, 19) 97%);
-
-    }
-   
-     .wrapper::after{
-        bottom: 0;
-      opacity: 1;
-        background-image: linear-gradient(to bottom, transparent 46%, rgba(12, 13, 19, 0.5) 68%, rgba(12, 13, 19) 97%);
-     }
-
-
-.card:hover .wrapper::before,
- .wrapper::after{
-     opacity: 1;
-    }
-
-    .card:hover .wrapper::after{
-        height: 500px;
-    }
-
-    .logo{
-        width: 100%;
-        transition: transform 0.5s;
-        position: absolute;
-        bottom: 310px;
-
-    
-    }
-
-    .card:hover .logo{
-        transform: translateY(0%,-50px,390px);
-
-    }
-
-   .card:hover .cover-image{
-   opacity: 0.3;   
-}
-   
-
-.character{
-  width: 100%;
-  opacity: 0;
-  transform: all 0.5s;
-filter: drop-shadow(2px 2px 2pc #000);
-  position: absolute;
-  z-index: 1;
-
-}
-
-.card:hover.character{
-    opacity: 1;
-    transform: translateY(5%,  -20%  ,670px);
-}
-
-
-
-
-
-
-
-
- 
-.a1{
-    display:inline-block;
-	position: center;
-	margin-left:auto;
-    margin-right:auto;
-    margin-left: 450px;
-    margin-top: 600px;
-	height:50px;
-	width:85px;	
-	line-height:50px;
-	border-radius:2px;
-    color: rgb(2, 2, 8);
-    background-color:rgb(238, 238, 238);
-    text-decoration: none;
-    
-    border-radius:25px;
-}    
+  }
   
-.p2{
-
-    background-color: rgb(94, 84, 40);
-    width: 100%; /* Set the desired width */
-    height: 1400px
-}
-.p3{
-
-    background-color: rgb(14, 88, 88);    width: 100%; /* Set the desired width */
-    height: 1400px
-}
-.p4{
-
-    background-color: rgb(87, 58, 113);    width: 100%; /* Set the desired width */
-    height: 1400px
-}
+  .container {
+    width: 350px;
+    height: 500px;
+    perspective: 800px;
+  }
+  
+  .container:hover > .card {
+    cursor: pointer;
+    transform: rotateY(180deg);
+  }
+  
+  .card {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+  }
+  
+  .front,
+  .back {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  .front {
+    background-image: url(https://source.unsplash.com/random/350x500);
+  }
+  
+  .back {
+    background-color: #3a3a3a;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
