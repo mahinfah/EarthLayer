@@ -7,21 +7,24 @@ h1{
     font-size: 223px;
 }
 #p1{  
-    width: 100%; /* Ensure the element has width */
-    height: 100%; /* Ensure the element has height */
-
-    background-image: url(new.jpg); /* Adjust the path if necessary */
-    background-size: cover; /* Adjust the size of the background image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    background-position: center; /* Center the background image */
-  }
+     /* Use height instead of size */
+    background-image: url('/static/img/new.jpg'); /* Ensure this path is correct */
+width: 100%; /* Use width instead of size */
+    height: 800px;
+    background-size: cover;
+    background-size: auto;
+    backdrop-filter: blur(10px);
+    background-position: center;
+    background-repeat: no-
+}
  
 .a1{
     display:inline-block;
 	position: center;
 	margin-left:auto;
 	margin-right:auto;
-
+margin-left: 450px;
+margin-top: 600px;
 	height:50px;
 	width:85px;	
 	line-height:50px;
@@ -35,7 +38,7 @@ h1{
   
 .p2{
 
-    background-color: rgb(99, 86, 177);
+    background-color: rgb(94, 84, 40);
     width: 100%; /* Set the desired width */
     height: 1400px
 }
