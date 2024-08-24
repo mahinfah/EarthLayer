@@ -3,17 +3,32 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+  .left{ 
+    
+
+    width: 35%;
+    float: left;
+    height: 800px;
+    color: aliceblue;
+    background-color: #0c0108;/* Add your gradient here */
+  }
+  .left h1{
+      font-size: 3em;
+      text-align: center;
+      color: #ca2b2b;
+    }
 
   .container {
-    width: 100%;
+    width: 65%;
+    float: right;
     height: 800px;
     perspective: 100%;
-  
-    background-color: rgb(0, 0, 0);
-    background: linear-gradient(to right, #110b0a, #0e001b); /* Add your gradient here */
+  padding:0;
+     background-color: rgb(0, 0, 0);
+ background-color: #040025;
+ background-color: #0c0108;/* Add your gradient here */
+  }
 
-}
 
 
   
@@ -23,12 +38,12 @@
   }
   
   .card {
-    margin-left: 920px;
-    margin-bottom: 500px;
-        height: 800px;
-    width: 750px;
+    margin-left: 400px;
 
-    position: relative;
+        height: 800px;
+        width: 750px;
+
+    position:static;
     transition: transform 1500ms;
     transform-style: preserve-3d;
   }
@@ -67,7 +82,9 @@
 
   .pol
   {
-
+   width: 100%;
+   height: 2444px;
+   float: inline-start;
     background: linear-gradient(to right, #00e859, #1b07d0); /* Add your gradient here */
   }
 
