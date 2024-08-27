@@ -106,6 +106,7 @@ scroll-behavior: smooth;
    background: linear-gradient(45deg, rgba(32,42,62,1) 44%, rgba(12,107,185,1) 88%);
   img{
   margin-top: 0px;
+  display: block;
   }
 
    a{
@@ -140,14 +141,25 @@ scroll-behavior: smooth;
     color:white ;  /*  depth   */
     font-size: 25px;
     display: block;
-    margin-top: 0px;
+    margin-top: -220px;
     margin-left: 85%;
+    display: block;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-feature-settings: "afrc";
     font-stretch: semi-expanded;
-    
+  }
+
+  p{
+    font-size: 28px;
+    letter-spacing: 2px;
+    position: relative;
+    color: white;
+    text-align:left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 800px;
   }
   
+
   }
 
   
