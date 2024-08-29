@@ -1,2 +1,2 @@
 # EarthLayer
-visit site: http://earth.infinityfreeapp.com/
+visit site : http://earthlayer.infinityfreeapp.com/
