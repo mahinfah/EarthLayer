@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
   }
+  
   html{
 scroll-behavior: smooth;
 
@@ -152,6 +153,17 @@ scroll-behavior: smooth;
   p{
     font-size: 28px;
     letter-spacing: 2px;
+    position: relative;
+    color: white;
+    text-align:left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 800px;
+  }
+  h1{
+
+    color: #ffffff;
+    font-size: 30px;
+    letter-spacing: 4px;
     position: relative;
     color: white;
     text-align:left;
