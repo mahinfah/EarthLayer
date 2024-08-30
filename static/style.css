@@ -625,5 +625,34 @@ h1{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-left: 700px;
 }
+h11{
+
+  color: #ffffff;
+  font-size: 30px;
+  letter-spacing: 4px;
+  position: relative;
+  color: white;
+  text-align:left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 830px;
+}
+.uu{  /*  Keep diving   */
+  font-size:35px;
+  background-color: #f3f3f3;
+  width: 280px;
+  display: block;
+  margin-bottom:344px;
+  
+  text-decoration: none;
+  text-align: center;
+  height: 58px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  color:black;
+  margin-left: 840px;  
+  border-radius: 3px;
+}
+
+
 
 }
